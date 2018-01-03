@@ -3,6 +3,7 @@ layout: post
 title:  "mssql-post!"
 date:   2018-01-03
 comments: true
+categories: 1.MSSQL
 ---
 
 * content
