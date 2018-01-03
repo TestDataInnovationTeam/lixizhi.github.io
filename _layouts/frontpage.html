@@ -24,7 +24,7 @@ layout: default
               <h2>
               {{ post.title }}
               </h2>
-              <span class="">{{ post.date | date: "%b %-d, %Y" }}{{post.author | string : "by. % "}}</span>
+              <span class="">{{ post.date | date: "%b %-d, %Y by." }}{{post.author}}</span>
             </a>
           {% endfor %}
         </div>
