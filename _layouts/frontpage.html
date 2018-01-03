@@ -24,7 +24,7 @@ layout: default
               <h2>
               {{ post.title }}
               </h2>
-              <span class="">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <span class="">{{ post.date | date: "%b %-d, %Y" }}{{post.author}}</span>
             </a>
           {% endfor %}
         </div>
@@ -54,7 +54,7 @@ layout: default
       <div class="categories-list-header">
         Categories
       </div>
-      
+
       <a href="javascript:;" class="categories-list-item" cate="All">
         All<span class="my-badge"> {{site.posts | size}}</span>
       </a>
