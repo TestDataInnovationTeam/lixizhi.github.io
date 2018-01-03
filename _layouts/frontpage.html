@@ -24,7 +24,8 @@ layout: default
               <h2>
               {{ post.title }}
               </h2>
-              <span class="">{{ post.date | date: "%b %-d, %Y" }}{{"  by. "post.author }}</span>
+              <span class="">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %}, posted by {{ post.author}}{% endif %}</span>
+              <!--{% if post.author %}, posted by {{ post.author}}{% endif %} -->
             </a>
           {% endfor %}
         </div>
@@ -38,7 +39,7 @@ layout: default
                     <h2>
                     {{ post.title }}
                     </h2>
-                    <span class="">{{ post.date | date: "%b %-d, %Y" }}{{"  by. "post.author }}</span>
+                    <span class="">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %}, posted by {{ post.author}}{% endif %}</span>
                   </a>
                 {% endif %}
               {% endfor %}
